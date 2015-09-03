@@ -1,0 +1,95 @@
+/* ---------- desktop layout --------------------------------------- */
+
+.en_left_wrapper,
+.en_right_wrapper  {
+  float: left;
+  clear: left;
+}
+
+.twocolumn .en_left_wrapper {
+  float: left;
+  clear: left;
+}
+
+.twocolumn .en_right_wrapper {
+  float: right;
+  clear: right;
+  width: 40%;
+}
+
+.en_left_wrapper {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 30em;
+  min-width: 60%;
+}
+
+.en_right_wrapper {
+  max-width: 30em;
+  overflow: hidden;
+  padding-left: 3em;
+  padding-right: 4em;
+}
+
+/* ---------- desktop styles --------------------------------------- */
+
+.background-image {
+  top: auto;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  max-width: 800px;
+  max-height: 100%;
+}
+.background-image img {
+  width: 100%;
+  max-height: 100%;
+}
+.en_left_wrapper {
+  min-height: none;
+  right: 37em;
+}
+
+.logo {
+  position: fixed;
+}
+.logo,
+.fixed {
+  margin-left: 4em;
+  width: auto;
+}
+
+.quote blockquote cite {
+  font-size: 0.25em;
+}
+.en_left_wrapper .quote {
+  padding-top: 260px;
+}
+
+#eaerrors {
+  float: right;
+  width: 40%;
+  max-width: 34em;
+  padding-left: 3.4em;
+  padding-right: 4.5em;
+  z-index: 0;
+}
+
+.stuck {
+  position: fixed;
+}
+#sticky-target.stuck {
+  padding-top: 1.97058824em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  padding-right: 4em;
+  margin-left: -3em;
+  margin-right: -4em;
+}
+.twocolumn .sticky-wrapper .stuck {
+  width: 40%;
+  max-width: 30em;
+}
