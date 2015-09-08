@@ -20,18 +20,17 @@ Also make sure there are no spaces between the elements of each column when buil
 
 Just upload your image to a copy box and place this wrapper around it. Please make sure the image's dimensions are 785x900px or it's very likely that something is going to look very weird!
 
-### big quote
+### big copy
 
 ```html
-<div class="quote fixed">
-  <blockquote>
-    This is the quote
-    <cite>the person quoted</cite>
-  </blockquote>
+<div class="copy fixed">
+  <h1>
+    some short text
+  </h1>
 </div>
 ```
 
-Copy-paste this to a copy box and replace the quote and quotee. Perhaps it's necessary to add manual linebreaks within the quote, depending on how you want the text to be displayed.
+Copy-paste this to a copy box and replace the text. Perhaps it's necessary to add manual linebreaks, depending on how you want the text to be displayed.
 
 ## copy boxes above the form fields
 

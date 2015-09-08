@@ -584,7 +584,7 @@ body {
   margin-bottom: 1.47058824em;
 }
 .en_left_wrapper {
-  background-color: #ec1b30;
+  background-color: #73736f;
   color: #ffffff;
 }
 p,
@@ -642,7 +642,7 @@ h1 {
   font-family: "Knockout 50 A", "Knockout 50 B", "Myriad Pro", "Myriad", Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: 400;
   font-style: normal;
-  color: #f3343c;
+  color: #595956;
   text-decoration: none;
   word-wrap: break-word;
   text-transform: uppercase;
@@ -673,7 +673,7 @@ legend {
   font-family: "Knockout 50 A", "Knockout 50 B", "Myriad Pro", "Myriad", Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: 400;
   font-style: normal;
-  color: #f3343c;
+  color: #595956;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -685,7 +685,7 @@ h3 {
   font-family: "Knockout 50 A", "Knockout 50 B", "Myriad Pro", "Myriad", Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: 400;
   font-style: normal;
-  color: #f3343c;
+  color: #595956;
   text-transform: uppercase;
 }
 h4 {
@@ -696,7 +696,7 @@ h4 {
   font-family: "Myriad Pro", "Myriad", Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
-  color: #f3343c;
+  color: #595956;
 }
 h5 {
   font-size: 1em;
@@ -716,7 +716,7 @@ h6 {
   font-family: "Myriad Pro", "Myriad", Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
-  color: #f3343c;
+  color: #595956;
 }
 .en_left_wrapper h1,
 .en_left_wrapper h2,
@@ -727,7 +727,7 @@ h6 {
   color: #ffffff;
 }
 /* ---------- quotes ------------------------------------------------ */
-.quote blockquote {
+.copy blockquote {
   line-height: 1.25em;
   font-size: 3.52941176em;
   font-size: 3.52941176rem;
@@ -739,11 +739,11 @@ h6 {
   text-transform: uppercase;
   margin-top: 0;
 }
-.quote blockquote p {
+.copy blockquote p {
   margin-bottom: 0;
 }
 @media screen and (min-width: 1550px) {
-  .quote blockquote {
+  .copy blockquote {
     line-height: 1.04166667em;
     font-size: 5.64705882em;
     font-size: 5.64705882rem;
@@ -768,23 +768,28 @@ cite {
 /* ---------- header ------------------------------------------------ */
 /* ---------- main -------------------------------------------------- */
 #main,
-#footer {
+.footer {
   overflow: hidden;
 }
 /* ---------- background image -------------------------------------- */
 .background-image {
   position: absolute;
-  width: 333px;
-  bottom: 0;
-  right: -20px;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: -20%;
+}
+.background-image img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
 }
 .en_left_wrapper {
   min-height: 380px;
 }
 @media screen and (min-width: 520px) {
   .background-image {
-    width: 404px;
-    right: 0;
+    left: 0;
   }
   .en_left_wrapper {
     min-height: 460px;
@@ -792,14 +797,12 @@ cite {
 }
 @media screen and (min-width: 780px) {
   .background-image {
-    top: auto;
     bottom: 0;
+    left: -20%;
     right: 0;
   }
-  .background-image,
   .background-image img {
-    width: 100%;
-    max-height: 100%;
+    width: auto;
   }
   .en_left_wrapper {
     min-height: none;
@@ -807,15 +810,12 @@ cite {
 }
 @media screen and (min-width: 1150px) {
   .background-image {
-    width: auto;
+    left: -10;
   }
 }
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1550px) {
   .background-image {
-    width: 900px;
-  }
-  .background-image img {
-    max-height: none;
+    left: 0;
   }
 }
 /* ---------- left column ------------------------------------------- */
@@ -823,48 +823,116 @@ cite {
   position: relative;
   z-index: 1;
 }
-.en_left_wrapper .quote {
-  max-width: 18em;
-  padding-top: 160px;
+.en_left_wrapper .copy {
+  max-width: 25em;
+  padding-top: 120px;
+  padding-bottom: 0.73529412em;
 }
 .logo {
   position: absolute;
   z-index: 1;
   margin-top: 1.47058824em;
   margin-left: 10%;
-  max-width: 30%;
-  width: 100px;
+  max-width: 80%;
+  width: 300px;
+}
+.footer .logos {
+  padding: 0.73529412em 0;
+  text-align: center;
+}
+.footer .logos img {
+  height: 50px;
+  width: auto;
+  padding: 0 0.36764706em;
+}
+.footer .logos .first img {
+  padding-left: 0;
+}
+.footer .logos .last img {
+  padding-right: 0;
+}
+.footer .logos a,
+.footer .logos a:link {
+  text-decoration: none;
+}
+#left-footer {
+  min-height: auto;
+}
+@media screen and (min-width: 520px) {
+  .en_left_wrapper .copy {
+    padding-top: 160px;
+  }
+  .footer .logos img {
+    padding: 0 3%;
+  }
 }
 @media screen and (min-width: 780px) {
   .logo {
     position: fixed;
+    bottom: 100px;
   }
   .logo,
   .fixed {
     margin-left: 2em;
+  }
+  .fixed {
     width: auto;
   }
-  .en_left_wrapper .quote {
-    padding-top: 240px;
+  .en_left_wrapper .copy {
+    padding-top: 2.05882353em;
+  }
+  .footer .logos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 90%;
+    border-top: 2px solid #ffffff;
+    text-align: right;
+  }
+  .footer .logos img {
+    height: 50px;
+    padding: 0 0.36764706em;
+  }
+  .footer .logos .first {
+    float: left;
+  }
+  #left-footer {
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 1150px) {
+  .logo {
+    bottom: 110px;
+  }
   .logo,
   .fixed {
     margin-left: 4em;
   }
-  .en_left_wrapper .quote {
-    padding-top: 260px;
+  .footer .logos {
+    min-width: 560px;
+    max-width: 900px;
+    margin-right: 6em;
+  }
+  .footer .logos img {
+    height: 60px;
+    padding: 0 0.73529412em;
   }
 }
 @media screen and (min-width: 1550px) {
+  .logo {
+    bottom: 130px;
+    width: 439px;
+  }
   .logo,
   .fixed {
     margin-left: 5em;
   }
-  .en_left_wrapper .quote {
-    max-width: 30em;
-    padding-top: 280px;
+  .en_left_wrapper .copy {
+    max-width: 40em;
+  }
+  .footer .logos img {
+    height: 75px;
   }
 }
 @media screen and (min-width: 1700px) {
@@ -951,12 +1019,12 @@ cite {
   margin-bottom: 1.3333em;
 }
 /* ---------- footer ------------------------------------------------ */
-#footer .menu li {
+.footer .menu li {
   list-style: none;
   margin-bottom: 0;
 }
-#footer .menu a,
-#footer .menu a:link {
+.footer .menu a,
+.footer .menu a:link {
   color: #73736f;
 }
 /* ==================================================================
@@ -1002,7 +1070,7 @@ input[type="reset"],
 button,
 a.button,
 .button {
-  background-color: #f3343c;
+  background-color: #52a73e;
   line-height: 1.85185185em;
   font-size: 1.58823529em;
   font-size: 1.58823529rem;
@@ -1014,11 +1082,11 @@ a.button,
   color: #ffffff;
   text-decoration: none;
   white-space: normal;
-  border: 2px solid #f21c25;
-  border-bottom: 2px solid #e60e17;
+  border: 2px solid #499437;
+  border-bottom: 2px solid #408230;
   width: 100%;
   max-with: 350px;
-  text-shadow: #e60e17 1px 1px 0px;
+  text-shadow: #408230 1px 1px 0px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
@@ -1036,8 +1104,8 @@ button:focus,
 a.button:focus,
 .ui-body-o a.button:hover,
 .ui-body-o a.button:focus {
-  background-color: #f44c53;
-  border-color: #f3343c;
+  background-color: #57b242;
+  border-color: #4ea03b;
   color: #ffffff;
 }
 input[type="submit"]:active,
@@ -1046,8 +1114,8 @@ input[type="reset"]:active,
 button:active,
 .button:active,
 a.button:active {
-  background-color: #f21c25;
-  border-color: #e60e17;
+  background-color: #4d9c3a;
+  border-color: #438933;
   color: #ffffff;
 }
 input.eaResetButton,
@@ -1656,7 +1724,7 @@ ul.share-links .email span.icon {
   float: left;
   overflow: hidden;
   margin: 0;
-  background-color: #f3343c;
+  background-color: #52a73e;
 }
 /* ---------- sticky header ----------------------------------------- */
 #sticky-target {
