@@ -825,7 +825,7 @@ cite {
 }
 .en_left_wrapper .copy {
   max-width: 25em;
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 0.73529412em;
 }
 .logo {
@@ -860,7 +860,7 @@ cite {
 }
 @media screen and (min-width: 520px) {
   .en_left_wrapper .copy {
-    padding-top: 160px;
+    padding-top: 180px;
   }
   .footer .logos img {
     padding: 0 3%;
