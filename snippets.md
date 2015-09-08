@@ -18,7 +18,7 @@ Also make sure there are no spaces between the elements of each column when buil
 </div>
 ```
 
-Just upload your image to a copy box and place this wrapper around it. Please make sure the image's dimensions are 785x900px or it's very likely that something is going to look very weird!
+Just upload your image to a copy box and place this wrapper around it.
 
 ### big copy
 
