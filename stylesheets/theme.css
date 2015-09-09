@@ -726,6 +726,10 @@ h6 {
 .en_left_wrapper h6 {
   color: #ffffff;
 }
+.no-margin,
+.no-text-below {
+  margin-bottom: 0;
+}
 /* ---------- quotes ------------------------------------------------ */
 .copy blockquote {
   line-height: 1.25em;

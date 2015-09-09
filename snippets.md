@@ -96,6 +96,12 @@ Unfortunately, this is a little tricky because the EN editor keeps deleting all 
 </div>
 ```
 
+If there is only the heading above the form but no other text, you should add the class `no-text-below` to the heading to correct the margin between the heading and form:
+
+```html
+<h1 class="no-text-below">This is my lonely heading</h1>
+```
+
 ## copy boxes below the form fields
 
 Everything that comes below the actual form fields needs this wrapper:
