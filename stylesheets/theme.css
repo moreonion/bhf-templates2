@@ -778,6 +778,7 @@ cite {
 /* ---------- background image -------------------------------------- */
 .background-image {
   position: absolute;
+  overflow: hidden;
   min-width: 100%;
   min-height: 100%;
   top: 0;
@@ -802,7 +803,7 @@ cite {
 @media screen and (min-width: 780px) {
   .background-image {
     bottom: 0;
-    left: -20%;
+    left: auto;
     right: 0;
   }
   .background-image img {
@@ -810,16 +811,6 @@ cite {
   }
   .en_left_wrapper {
     min-height: none;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .background-image {
-    left: -10;
-  }
-}
-@media screen and (min-width: 1550px) {
-  .background-image {
-    left: 0;
   }
 }
 /* ---------- left column ------------------------------------------- */

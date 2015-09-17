@@ -37,16 +37,12 @@
 /* ---------- desktop styles --------------------------------------- */
 
 .background-image {
-  top: auto;
+  left: auto;
   bottom: 0;
   right: 0;
-  width: auto;
-  max-width: 800px;
-  max-height: 100%;
 }
 .background-image img {
-  width: 100%;
-  max-height: 100%;
+  width: auto;
 }
 .en_left_wrapper {
   min-height: none;
@@ -55,18 +51,43 @@
 
 .logo {
   position: fixed;
+  bottom: 110px;
 }
 .logo,
 .fixed {
   margin-left: 4em;
+}
+.fixed {
   width: auto;
 }
 
-.quote blockquote cite {
+.copy blockquote cite {
   font-size: 0.25em;
 }
-.en_left_wrapper .quote {
-  padding-top: 260px;
+.en_left_wrapper .copy {
+  padding-top:  2.05882353em;
+}
+
+.footer .logos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 560px;
+  max-width: 900px;
+  border-top: 2px solid #ffffff;
+  text-align: right;
+  margin-right: 6em;
+}
+.footer .logos img {
+  height: 60px;
+  padding: 0 0.73529412em;
+}
+.footer .logos .first {
+  float: left;
+}
+#left-footer {
+  background-color: transparent;
 }
 
 #eaerrors {
@@ -76,6 +97,13 @@
   padding-left: 3.4em;
   padding-right: 4.5em;
   z-index: 0;
+}
+
+.show-intro {
+  display: block;
+}
+#intro-copy {
+  display: none;
 }
 
 .stuck {
